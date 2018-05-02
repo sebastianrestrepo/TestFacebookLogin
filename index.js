@@ -7,7 +7,7 @@ var app = express(),
 
 app.engine('hbs', consolidate.handlebars);
 app.set('views', './views');
-app.set('views engine', 'hbs');
+app.set('view engine', 'hbs');
 
 MongoClient.connect('mongodb://localhost:27017', (err, client) => {
     if (err) throw err;
